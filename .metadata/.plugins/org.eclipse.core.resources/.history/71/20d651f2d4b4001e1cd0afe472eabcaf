@@ -1,0 +1,36 @@
+package ContaBanco;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class ContaTerminal {
+
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("Por favor, digite o numero da Agência: ");
+		int agencia = sc.nextInt();
+		sc.nextLine();
+		
+		System.out.print("Por favor, digite o numero da conta: ");
+		int conta = sc.nextInt();
+		
+		System.out.print("Por favor, digite o seu nome: ");
+        String nome = sc.next();
+        
+        System.out.print("Por favor, digite o seu saldo: ");
+        double saldo = sc.nextDouble();
+        
+        System.out.println();
+        System.out.println("Informações da Conta Bancária:");
+        System.out.println("Agência: " + agencia);
+        System.out.println("Titular: " + nome);
+        System.out.println("Número da Conta: " + conta);
+        System.out.println("Saldo: R$" + saldo);
+		
+		sc.close();
+	}
+
+}

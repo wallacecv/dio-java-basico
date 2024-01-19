@@ -1,0 +1,51 @@
+package Entidade;
+
+public class SmartTv {
+	
+	boolean ligada = false;
+	int canal = 1;
+	int volume = 25;
+	
+	public SmartTv(boolean ligada, int canal, int volume) {
+		this.ligada = ligada;
+		this.canal = canal;
+		this.volume = volume;
+	}
+
+	public SmartTv() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public boolean isLigada() {
+		return ligada;
+	}
+
+	public void setLigada(boolean ligada) {
+		this.ligada = ligada;
+	}
+
+	public int getCanal() {
+		return canal;
+	}
+
+	public void setCanal(int canal) {
+		this.canal = canal;
+	}
+
+	public int getVolume() {
+		return volume;
+	}
+
+	public void setVolume(int volume) {
+		this.volume = volume;
+	}
+	
+	public void ligar() {
+		ligada = true;
+		
+	}
+	public void desligar() {
+		desligar = false;
+		
+	}
+}
